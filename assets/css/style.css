@@ -1,0 +1,157 @@
+:root {
+  --white: #fff;
+  --black: black;
+  --pink: #dea5a4;
+  /* You can use it with any value that is repeated throughout the sheet */
+  --border-radius: 50px;
+}
+body{
+    background-color: darkgrey;
+}
+
+.card {
+    background-color: darkgray;
+    color: white;
+    padding: 1rem;
+    height: 300px;
+    border: dashed 2px white;
+  }
+
+  .cards {
+    max-width: 1200px;
+    margin: 18px auto;
+    display: grid;
+    gap: 50px;
+  }
+
+  .code{
+    display: flex;
+    /* background-color: purple; */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,30,152,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 1rem;
+    height: 230px;
+    width: 90%;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 15px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-card{
+    background-color: darkgray;
+    color: purple;
+    padding: 1rem;
+    height: 15px;
+    position: relative;
+    margin-top: -35px;
+    border: solid 2px white;
+    text-align: center;
+  }
+
+  .title-card h2 {
+    margin-top: -10PX;
+  }
+
+  /* .card:first-child {
+    grid-column: span 3;
+  } */
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .card:first-child {
+      grid-column: span 3;
+    }
+  }
+/* larger than or equal to 900px*/
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* @media (min-width: 110px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
+  } */
+
+ /* new code */
+ /* .navy {
+  height: 10%;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,30,152,1) 35%, rgba(0,212,255,1) 100%);
+  width:90% ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+} */
+
+/* nav .logo {
+  position: relative;
+  font-size: 25px;
+  color: blue;
+  text-decoration:none ;
+  font-weight:600 ;
+} */
+
+/* nav .navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+nav .navigation li {
+list-style: none;
+margin:0 10px;
+}
+
+nav .navigation li a {
+  color: red;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 30px
+}
+
+nav .navigation li a:hover {
+  color: yellow;
+} */
+
+/* new header and nav code */
+
+header {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  /* text-align: center; */
+  /* Refer to CSS values by the name of the custom property we assigned it */
+  background: var(--black);
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+  background-color: var(--pink);
+}
+
+nav a {
+  color: var(--black);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+header img {
+  height: 200px;
+  width: 200px;
+  margin-right: 15px;
+  border-radius: 50%;
+  /* border: #fff; */
+  border: solid var(--pink);
+  border-width: 10px;
+}
