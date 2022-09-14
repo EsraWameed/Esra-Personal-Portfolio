@@ -1,9 +1,14 @@
+*{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 :root {
   --white: #fff;
   --black: black;
   --pink: #dea5a4;
   /* You can use it with any value that is repeated throughout the sheet */
   --border-radius: 50px;
+
+  
 }
 body{
     background-color: white;
@@ -182,6 +187,18 @@ footer {
   margin-top: auto;
 }
 
+.socialdeco img{
+  width: 100px;
+  height: 100px;
+
+}
+
+ul .socialdeco {
+  
+  list-style-type: none;
+  display: inline;
+  margin: 50px;
+}
 /* #image1{
   background-image: url("../images/horiseon.png");
   background-size: cover;
