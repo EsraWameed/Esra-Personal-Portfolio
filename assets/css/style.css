@@ -51,6 +51,10 @@ body{
     object-fit: fill;
   }
 
+  #myprojects{
+    text-align: center;
+  }
+
   .title-card{
     background-color: var(--pink);
     /* color: purple; */
@@ -155,6 +159,8 @@ nav a {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 nav a:hover {
@@ -220,6 +226,16 @@ ul .socialdeco {
     gap: 50px;
     flex-wrap: wrap;
 } */
+
+p {
+  font-size: 24px;
+}
+h2{
+  font-size: 32px;
+}
+.centering{
+  text-align: center;
+}
 
 @media (min-width: 900px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
