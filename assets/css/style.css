@@ -68,13 +68,7 @@ body{
   /* .card:first-child {
     grid-column: span 3;
   } */
-  @media (min-width: 550px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
-    .card:first-child {
-      /* background-color: blue; */
-      grid-column: span 3;
-    }
-  }
+
 
   #bluebackground{
     background-color: black;
@@ -84,9 +78,7 @@ body{
     background-color: blue;
   } */
 /* larger than or equal to 900px*/
-  @media (min-width: 900px) {
-    .cards { grid-template-columns: repeat(3, 1fr); }
-  }
+ 
 
   /* @media (min-width: 110px) {
     .cards { grid-template-columns: repeat(1, 1fr); }
@@ -201,13 +193,38 @@ footer {
 } */
 
 
-@media (min-width: 400px)
+/* @media (min-width: 400px)
 .cards {
     grid-template-columns: repeat(1, 1fr);
     max-width: 1200px;
     margin: 20px auto;
-    /* display: grid; */
+    
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+} */
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 550px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .card:first-child {
+    /* background-color: blue; */
+    grid-column: span 2;
+  }
+  .card:nth-child(2) {
+    grid-column: span 1;
+  }
+  .card:nth-child(3) {
+    grid-column: span 1;
+  }
+  .card:nth-child(4) {
+    grid-column: span 1;
+  }
+  .card:last-child {
+    grid-column: span 1;
+  }
+
 }
