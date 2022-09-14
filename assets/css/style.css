@@ -201,3 +201,13 @@ footer {
 } */
 
 
+@media (min-width: 400px)
+.cards {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1200px;
+    margin: 20px auto;
+    /* display: grid; */
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
