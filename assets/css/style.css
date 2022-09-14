@@ -6,15 +6,23 @@
   --border-radius: 50px;
 }
 body{
-    background-color: darkgrey;
+    background-color: white;
 }
 
 .card {
-    background-color: darkgray;
+    background-color: white;
     color: white;
     padding: 1rem;
     height: 300px;
-    border: dashed 2px white;
+    border: solid 4px black;
+    border-radius: 10%;
+    
+  }
+
+  .card:hover {
+    box-shadow: 0 0 50px red;
+    border: solid 6px red;
+    /* padding: 20px; */
   }
 
   .cards {
@@ -26,29 +34,31 @@ body{
 
   .code{
     display: flex;
-    /* background-color: purple; */
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,30,152,1) 35%, rgba(0,212,255,1) 100%);
     padding: 1rem;
     height: 230px;
     width: 90%;
     position: relative;
-    margin-top: 30px;
+    margin-top: 15px;
     border-radius: 15px;
-    object-fit: contain;
     margin-left: auto;
     margin-right: auto;
+    object-fit: fill;
   }
 
   .title-card{
-    background-color: darkgray;
-    color: purple;
+    background-color: var(--pink);
+    /* color: purple; */
+    color: white;
     padding: 1rem;
     height: 15px;
     position: relative;
     margin-top: -35px;
-    border: solid 2px white;
+    /* border: solid 2px white; */
+    border: solid var(--pink);
+  border-width: 10px;
     text-align: center;
+    border-radius: 5%;
   }
 
   .title-card h2 {
@@ -61,9 +71,18 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,30,152,1) 35%, rg
   @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
     .card:first-child {
+      /* background-color: blue; */
       grid-column: span 3;
     }
   }
+
+  #bluebackground{
+    background-color: black;
+  }
+
+  /* .title-card:first-child{
+    background-color: blue;
+  } */
 /* larger than or equal to 900px*/
   @media (min-width: 900px) {
     .cards { grid-template-columns: repeat(3, 1fr); }
@@ -156,8 +175,13 @@ header img {
   border-width: 10px;
 }
 
+header img:hover {
+  box-shadow: 0 0 100px red;
+  border: solid 5px red;
+}
+
 footer {
-  width: 100%;
+  /* width: 100%; */
   bottom: 0;
   padding: 20px;
   text-align: center;
@@ -165,3 +189,15 @@ footer {
   color: var(--white);
   margin-top: auto;
 }
+
+/* #image1{
+  background-image: url("../images/horiseon.png");
+  background-size: cover;
+
+} */
+
+/* .card:first-child{
+  width: 100%;
+} */
+
+
