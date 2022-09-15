@@ -1,14 +1,13 @@
+/*Universal Selector*/
 *{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/*declares global css variables*/
 :root {
   --white: #fff;
   --black: black;
   --pink: #dea5a4;
-  /* You can use it with any value that is repeated throughout the sheet */
   --border-radius: 50px;
-
-  
 }
 body{
     background-color: white;
@@ -20,14 +19,12 @@ body{
     padding: 1rem;
     height: 300px;
     border: solid 4px black;
-    border-radius: 10%;
-    
+    border-radius: 10%;   
   }
 
-  .card:hover {
+  .card:hover, header img:hover {
     box-shadow: 0 0 50px red;
     border: solid 6px red;
-    /* padding: 20px; */
   }
 
   .cards {
@@ -57,15 +54,13 @@ body{
 
   .title-card{
     background-color: var(--pink);
-    /* color: purple; */
     color: white;
     padding: 1rem;
     height: 15px;
     position: relative;
     margin-top: -35px;
-    /* border: solid 2px white; */
     border: solid var(--pink);
-  border-width: 10px;
+    border-width: 10px;
     text-align: center;
     border-radius: 5%;
   }
@@ -74,77 +69,14 @@ body{
     margin-top: -10PX;
   }
 
-  /* .card:first-child {
-    grid-column: span 3;
-  } */
-
-
   #bluebackground{
     background-color: black;
   }
-
-  /* .title-card:first-child{
-    background-color: blue;
-  } */
-/* larger than or equal to 900px*/
- 
-
-  /* @media (min-width: 110px) {
-    .cards { grid-template-columns: repeat(1, 1fr); }
-  } */
-
- /* new code */
- /* .navy {
-  height: 10%;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,30,152,1) 35%, rgba(0,212,255,1) 100%);
-  width:90% ;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5%;
-} */
-
-/* nav .logo {
-  position: relative;
-  font-size: 25px;
-  color: blue;
-  text-decoration:none ;
-  font-weight:600 ;
-} */
-
-/* nav .navigation {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 10px 0;
-}
-
-nav .navigation li {
-list-style: none;
-margin:0 10px;
-}
-
-nav .navigation li a {
-  color: red;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 30px
-}
-
-nav .navigation li a:hover {
-  color: yellow;
-} */
-
-/* new header and nav code */
 
 header {
   display: flex;
   padding: 40px;
   justify-content: center;
-  /* text-align: center; */
-  /* Refer to CSS values by the name of the custom property we assigned it */
   background: var(--black);
   color: var(--white);
 }
@@ -173,18 +105,11 @@ header img {
   width: 200px;
   margin-right: 15px;
   border-radius: 50%;
-  /* border: #fff; */
   border: solid var(--pink);
   border-width: 10px;
 }
 
-header img:hover {
-  box-shadow: 0 0 100px red;
-  border: solid 5px red;
-}
-
 footer {
-  /* width: 100%; */
   bottom: 0;
   padding: 20px;
   text-align: center;
@@ -196,36 +121,13 @@ footer {
 .socialdeco img{
   width: 100px;
   height: 100px;
-
 }
 
 ul .socialdeco {
-  
   list-style-type: none;
   display: inline;
   margin: 50px;
 }
-/* #image1{
-  background-image: url("../images/horiseon.png");
-  background-size: cover;
-
-} */
-
-/* .card:first-child{
-  width: 100%;
-} */
-
-
-/* @media (min-width: 400px)
-.cards {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 1200px;
-    margin: 20px auto;
-    
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-} */
 
 p {
   font-size: 24px;
@@ -237,14 +139,9 @@ h2{
   text-align: center;
 }
 
-@media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
-}
-
 @media (min-width: 550px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
   .card:first-child {
-    /* background-color: blue; */
     grid-column: span 2;
   }
   .card:nth-child(2) {
@@ -259,5 +156,3 @@ h2{
   .card:last-child {
     grid-column: span 1;
   }
-
-}
