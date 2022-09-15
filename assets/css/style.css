@@ -9,70 +9,10 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   --pink: #dea5a4;
   --border-radius: 50px;
 }
+/*Element Selectors*/
 body{
     background-color: white;
 }
-
-.card {
-    background-color: white;
-    color: white;
-    padding: 1rem;
-    height: 300px;
-    border: solid 4px black;
-    border-radius: 10%;   
-  }
-
-  .card:hover, header img:hover {
-    box-shadow: 0 0 50px red;
-    border: solid 6px red;
-  }
-
-  .cards {
-    max-width: 1200px;
-    margin: 18px auto;
-    display: grid;
-    gap: 50px;
-  }
-
-  .code{
-    display: flex;
-    background: rgb(2,0,36);
-    padding: 1rem;
-    height: 230px;
-    width: 90%;
-    position: relative;
-    margin-top: 15px;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: fill;
-  }
-
-  #myprojects{
-    text-align: center;
-  }
-
-  .title-card{
-    background-color: var(--pink);
-    color: white;
-    padding: 1rem;
-    height: 15px;
-    position: relative;
-    margin-top: -35px;
-    border: solid var(--pink);
-    border-width: 10px;
-    text-align: center;
-    border-radius: 5%;
-  }
-
-  .title-card h2 {
-    margin-top: -10PX;
-  }
-
-  #bluebackground{
-    background-color: black;
-  }
-
 header {
   display: flex;
   padding: 40px;
@@ -118,9 +58,11 @@ footer {
   margin-top: auto;
 }
 
-.socialdeco img{
-  width: 100px;
-  height: 100px;
+p {
+  font-size: 24px;
+}
+h2{
+  font-size: 32px;
 }
 
 ul .socialdeco {
@@ -128,17 +70,76 @@ ul .socialdeco {
   display: inline;
   margin: 50px;
 }
+/*Class selectors*/
+.card {
+    background-color: white;
+    color: white;
+    padding: 1rem;
+    height: 300px;
+    border: solid 4px black;
+    border-radius: 10%;   
+  }
 
-p {
-  font-size: 24px;
-}
-h2{
-  font-size: 32px;
-}
-.centering{
-  text-align: center;
-}
+  .card:hover, header img:hover {
+    box-shadow: 0 0 50px red;
+    border: solid 6px red;
+  }
 
+  .cards {
+    max-width: 1200px;
+    margin: 18px auto;
+    display: grid;
+    gap: 50px;
+  }
+
+  .code{
+    display: flex;
+    background: rgb(2,0,36);
+    padding: 1rem;
+    height: 230px;
+    width: 90%;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: fill;
+  }
+
+  .title-card{
+    background-color: var(--pink);
+    color: white;
+    padding: 1rem;
+    height: 15px;
+    position: relative;
+    margin-top: -35px;
+    border: solid var(--pink);
+    border-width: 10px;
+    text-align: center;
+    border-radius: 5%;
+  }
+
+  .title-card h2 {
+    margin-top: -10PX;
+  }
+
+  .socialdeco img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .centering{
+    text-align: center;
+  }
+/*Id Selectors that are unique*/
+  #bluebackground{
+    background-color: black;
+  }
+
+  #myprojects{
+    text-align: center;
+  }
+/*Media query to improve responsiveness and first child to make first project big*/
 @media (min-width: 550px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
   .card:first-child {
