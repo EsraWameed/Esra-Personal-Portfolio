@@ -66,7 +66,7 @@ h2{
 }
 
 ul .socialdeco {
-  list-style-type: none;
+  text-decoration: none;
   display: inline;
   margin: 50px;
 }
@@ -126,10 +126,27 @@ ul .socialdeco {
   .socialdeco img{
     width: 100px;
     height: 100px;
+    text-decoration: none;
   }
-  
+
+  .linkRepo{
+    background-color:red;
+    position: relative;
+    margin-top: -100px;
+    margin-left: 15%;
+    padding: 15px;
+    border-radius: 30%;
+  }
   .centering{
     text-align: center;
+  }
+
+  .resume{
+    background-color: rgb(40, 57, 57);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 30px;
   }
 /*Id Selectors that are unique*/
   #bluebackground{
@@ -157,3 +174,4 @@ ul .socialdeco {
   .card:last-child {
     grid-column: span 1;
   }
+}
